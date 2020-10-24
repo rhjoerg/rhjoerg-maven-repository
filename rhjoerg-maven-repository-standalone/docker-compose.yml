@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  rhjoerg-maven-repository:
+    image: rhjoerg/rhjoerg-maven-repository-standalone
+    container_name: rhjoerg-maven-repository-standalone
+    volumes:
+        - type: bind
+          source: ~/rhjoerg-maven-repository
+          target: /data
