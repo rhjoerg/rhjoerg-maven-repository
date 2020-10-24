@@ -6,7 +6,7 @@ public class MavenRepositoryServer
 {
 	public static void main(String[] args)
 	{
-		Server server = new Server(6000);
+		Server server = new Server(8000);
 
 		try
 		{
