@@ -24,6 +24,12 @@
 			<artifactId>jetty-server</artifactId>
 			<version>9.4.33.v20201020</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>ch.rhjoerg.maven.repository</groupId>
+			<artifactId>rhjoerg-maven-repository-web</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 		<!-- TEST -->
 		

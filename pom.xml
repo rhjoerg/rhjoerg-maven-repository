@@ -12,6 +12,7 @@
 	<name>rhjoerg-maven-repository</name>
 	
 	<modules>
+		<module>rhjoerg-maven-repository-web</module>
 		<module>rhjoerg-maven-repository-standalone</module>
 	</modules>
 		
@@ -84,15 +85,6 @@
 	
 	<build>
 	
-		<resources>
-			<resource>
-				<directory>${basedir}</directory>
-				<includes>
-					<include>LICENSE</include>
-				</includes>
-			</resource>
-		</resources>
-		
 		<pluginManagement>
 			<plugins>
 			
