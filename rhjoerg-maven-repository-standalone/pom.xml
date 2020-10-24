@@ -38,7 +38,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>ch.rhjoerg.maven.repository.MavenRepositoryServer</mainClass>
+							<mainClass>ch.rhjoerg.maven.repository.standalone.MavenRepositoryServer</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
