@@ -11,7 +11,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
-	<artifactId>rhjoerg-maven-repository-cre</artifactId>
+	<artifactId>rhjoerg-maven-repository-core</artifactId>
 	<packaging>jar</packaging>
 	
 	<name>rhjoerg-maven-repository-core</name>
