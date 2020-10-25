@@ -1,21 +1,30 @@
 package ch.rhjoerg.maven.repository.standalone;
 
 import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.servlet.ServletContextHandler;
+
+import ch.rhjoerg.maven.repository.web.MavenRepositoryServlet;
 
 public class MavenRepositoryServer
 {
-	public static void main(String[] args)
+	public static Server createServer(int port)
 	{
-		Server server = new Server(8000);
+		Server server = new Server(port);
+		ServletContextHandler context = new ServletContextHandler();
 
-		try
-		{
-			server.start();
-			server.join();
-		}
-		catch (Exception e)
-		{
-			e.printStackTrace();
-		}
+		context.setContextPath("/");
+		context.addServlet(MavenRepositoryServlet.class, "/*");
+
+		server.setHandler(context);
+
+		return server;
+	}
+
+	public static void main(String[] args) throws Exception
+	{
+		Server server = createServer(8000);
+
+		server.start();
+		server.join();
 	}
 }

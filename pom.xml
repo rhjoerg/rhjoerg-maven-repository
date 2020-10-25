@@ -55,6 +55,14 @@
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
 		<java.version>11</java.version>
+		
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+		
+		<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+		<jetty-server.version>9.4.33.v20201020</jetty-server.version>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-servlet -->
+		<jetty-servlet.version>9.4.33.v20201020</jetty-servlet.version>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-antrun-plugin -->
 		<maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>		
