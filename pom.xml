@@ -12,6 +12,7 @@
 	<name>rhjoerg-maven-repository</name>
 	
 	<modules>
+		<module>rhjoerg-maven-repository-api</module>
 		<module>rhjoerg-maven-repository-web</module>
 		<module>rhjoerg-maven-repository-standalone</module>
 	</modules>
