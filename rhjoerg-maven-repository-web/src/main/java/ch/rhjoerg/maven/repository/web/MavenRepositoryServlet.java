@@ -8,19 +8,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import ch.rhjoerg.maven.repository.context.MavenRepositoryContext;
+import ch.rhjoerg.maven.repository.service.MavenRepositoryService;
 
 public class MavenRepositoryServlet extends HttpServlet
 {
 	private static final long serialVersionUID = 1L;
 
-	private MavenRepositoryContext getMavenRepositoryContext()
+	private MavenRepositoryContext getContext()
 	{
 		return MavenRepositoryContext.class.cast(getServletContext().getAttribute(MavenRepositoryContext.class.getName()));
+	}
+
+	private MavenRepositoryService getService()
+	{
+		return getContext().getService();
 	}
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{
-		response.getOutputStream().print(getMavenRepositoryContext().toString());
+		response.getOutputStream().print(getService().toString());
 	}
 }
