@@ -9,8 +9,8 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ListenerHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 
-import ch.rhjoerg.maven.repository.context.MavenRepositoryContext;
 import ch.rhjoerg.maven.repository.context.loader.ServiceLoaderMavenRepositoryContext;
+import ch.rhjoerg.maven.repository.spi.MavenRepositoryContext;
 import ch.rhjoerg.maven.repository.web.MavenRepositoryContextListener;
 import ch.rhjoerg.maven.repository.web.MavenRepositoryServlet;
 

@@ -4,7 +4,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-import ch.rhjoerg.maven.repository.context.MavenRepositoryContext;
+import ch.rhjoerg.maven.repository.spi.MavenRepositoryContext;
 
 public class MavenRepositoryContextListener implements ServletContextListener
 {

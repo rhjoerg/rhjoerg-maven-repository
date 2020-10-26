@@ -1,4 +1,4 @@
-package ch.rhjoerg.maven.repository.service;
+package ch.rhjoerg.maven.repository.spi;
 
 public interface MavenRepositoryService
 {

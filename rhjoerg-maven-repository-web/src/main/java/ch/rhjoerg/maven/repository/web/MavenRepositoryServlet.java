@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import ch.rhjoerg.maven.repository.context.MavenRepositoryContext;
-import ch.rhjoerg.maven.repository.service.MavenRepositoryService;
+import ch.rhjoerg.maven.repository.spi.MavenRepositoryContext;
+import ch.rhjoerg.maven.repository.spi.MavenRepositoryService;
 
 public class MavenRepositoryServlet extends HttpServlet
 {

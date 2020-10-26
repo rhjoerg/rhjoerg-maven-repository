@@ -14,6 +14,7 @@
 	<modules>
 		<module>rhjoerg-maven-repository-api</module>
 		<module>rhjoerg-maven-repository-core</module>
+		<module>rhjoerg-maven-repository-storage-file</module>
 		<module>rhjoerg-maven-repository-web</module>
 		<module>rhjoerg-maven-repository-standalone</module>
 	</modules>
