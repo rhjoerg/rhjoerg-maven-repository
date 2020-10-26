@@ -9,6 +9,8 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ListenerHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 
+import ch.rhjoerg.maven.repository.context.MavenRepositoryContext;
+import ch.rhjoerg.maven.repository.context.impl.DefaultMavenRepositoryContext;
 import ch.rhjoerg.maven.repository.web.MavenRepositoryContextListener;
 import ch.rhjoerg.maven.repository.web.MavenRepositoryServlet;
 
@@ -32,6 +34,7 @@ public class MavenRepositoryServer
 		ServletContextHandler context = new ServletContextHandler();
 
 		context.setContextPath("/");
+		context.setInitParameter(MavenRepositoryContext.class.getName(), DefaultMavenRepositoryContext.class.getName());
 		context.addServlet(MavenRepositoryServlet.class, "/*");
 		context.getServletHandler().addListener(new ListenerHolder(MavenRepositoryContextListener.class));
 

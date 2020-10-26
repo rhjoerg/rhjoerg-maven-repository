@@ -7,21 +7,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import ch.rhjoerg.maven.repository.context.MavenRepositoryContext;
+
 public class MavenRepositoryServlet extends HttpServlet
 {
 	private static final long serialVersionUID = 1L;
 
-	private String service;
-
-	@Override
-	public void init() throws ServletException
+	private MavenRepositoryContext getMavenRepositoryContext()
 	{
-		service = getServletConfig().getInitParameter("service");
+		return MavenRepositoryContext.class.cast(getServletContext().getAttribute(MavenRepositoryContext.class.getName()));
 	}
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{
-		response.getOutputStream().print(service);
+		response.getOutputStream().print(getMavenRepositoryContext().toString());
 	}
 }
