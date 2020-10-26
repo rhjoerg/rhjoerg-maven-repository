@@ -44,6 +44,12 @@
 
 		<dependency>
 			<groupId>ch.rhjoerg.maven.repository</groupId>
+			<artifactId>rhjoerg-maven-repository-storage-file</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.rhjoerg.maven.repository</groupId>
 			<artifactId>rhjoerg-maven-repository-web</artifactId>
 			<version>${project.version}</version>
 		</dependency>

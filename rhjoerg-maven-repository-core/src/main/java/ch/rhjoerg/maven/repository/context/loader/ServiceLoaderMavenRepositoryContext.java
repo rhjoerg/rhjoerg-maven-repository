@@ -28,6 +28,7 @@ public class ServiceLoaderMavenRepositoryContext implements MavenRepositoryConte
 		if (service == null)
 		{
 			service = ServiceLoader.load(MavenRepositoryService.class).findFirst().get();
+			service.setStorage(getStorage());
 		}
 
 		return service;

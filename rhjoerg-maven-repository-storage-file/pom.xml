@@ -18,6 +18,12 @@
 	
 	<dependencies>
 	
+		<dependency>
+			<groupId>ch.rhjoerg.maven.repository</groupId>
+			<artifactId>rhjoerg-maven-repository-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	
 		<!-- TEST -->
 		
 		<dependency>
