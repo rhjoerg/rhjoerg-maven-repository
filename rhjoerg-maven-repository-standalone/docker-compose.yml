@@ -4,7 +4,7 @@ services:
     image: rhjoerg/rhjoerg-maven-repository-standalone
     volumes:
         - type: bind
-          source: ~/rhjoerg-maven-repository
-          target: /data
+          source: ~/.rhjoerg-maven-repository
+          target: /var/rhjoerg-maven-repository
     ports:
         - 8000:80
