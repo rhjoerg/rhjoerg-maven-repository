@@ -13,4 +13,10 @@ public class StandardMavenRepositoryService implements MavenRepositoryService
 	{
 		this.storage = storage;
 	}
+
+	@Override
+	public Result getResult(String path)
+	{
+		return null;
+	}
 }
