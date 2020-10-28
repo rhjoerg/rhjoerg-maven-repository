@@ -19,6 +19,7 @@ public class MavenRepositoryServlet extends HttpServlet
 		return MavenRepositoryContext.class.cast(getServletContext().getAttribute(MavenRepositoryContext.class.getName()));
 	}
 
+	@SuppressWarnings("unused")
 	private MavenRepositoryService getService()
 	{
 		return getContext().getService();
@@ -27,6 +28,6 @@ public class MavenRepositoryServlet extends HttpServlet
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{
-		response.getOutputStream().print(getService().toString());
+		response.getOutputStream().print(request.getPathInfo());
 	}
 }
