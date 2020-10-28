@@ -7,4 +7,4 @@ services:
           source: ~/rhjoerg-maven-repository
           target: /data
     ports:
-        - 8000:8000
+        - 8000:80
