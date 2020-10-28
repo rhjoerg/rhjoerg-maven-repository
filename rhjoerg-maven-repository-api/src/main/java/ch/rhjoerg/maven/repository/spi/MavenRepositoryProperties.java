@@ -4,6 +4,6 @@ public interface MavenRepositoryProperties
 {
 	public static int getPort()
 	{
-		return 80;
+		return Integer.parseInt(System.getProperty("rhjoerg-maven-repository.port", "80"));
 	}
 }
